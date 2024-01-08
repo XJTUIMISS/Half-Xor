@@ -41,7 +41,7 @@ https://www.tpc.org/default5.asp
 |Method            |Data Structure                       |Description                             |Reference|
 |:------------------:|:-----------------------------------:|:---------------------------------------:|:----------------------:|
 |HyperLogLog-FD        |counter matrix                            |large error and large memory cost                 |[HLL-FD.cpp](HLL-FD.cpp)      |
-|HyperLogLog-Pro|probabilistic counter matrix|cannot merge and unstable performance|[HLL-Pro.cpp](HLL-Pro.cpp)|
+|HyperLogLog-Prob|probabilistic counter matrix|cannot merge and unstable performance|[HLL-Prob.cpp](HLL-Prob.cpp)|
 |Half-Xor |bit matrix and counter array|original half-xor|[Half-Xor.cpp](Half-Xor.cpp)      |
 |Half-Xor (order statistics)|bit matrix and counter array|acceleration of original half-xor|[Half-Xor.cpp](Half-Xor.cpp)      |
 |Half-Xor (stochastic averaging)|bit matrix and counter array|simulation and acceleration of original half-xor|[Half-Xor.cpp](Half-Xor.cpp)      |
@@ -53,7 +53,7 @@ To compile the codes, use:
 
 ```shell
 make hll-fd
-make hll-pro
+make hll-prob
 make half-xor
 ```
 
